@@ -5,9 +5,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Interior Room Color Visualizer</title>
 
-  <!-- font + css -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="wrap">
@@ -40,7 +39,7 @@
         <label>Tolerance</label>
         <input id="tol" type="range" min="5" max="100" value="28">
 
-        <div class="row actions-row">
+        <div class="row actions-row" style="margin-top:10px">
           <button id="apply" class="btn">Apply Color</button>
           <button id="download" class="btn small">Download</button>
         </div>
@@ -53,20 +52,11 @@
           <div class="phone-frame">
             <div class="phone-inner">
               <div id="placeholder" class="placeholder">
-                <!-- inline SVG placeholder -->
                 <img src="data:image/svg+xml;utf8,
                   <svg xmlns='http://www.w3.org/2000/svg' width='600' height='350' viewBox='0 0 600 350'>
                     <rect width='100%' height='100%' fill='%23061a2b'/>
                     <g fill='%239fb1c9' font-family='Inter, Arial' font-size='20'>
                       <text x='40' y='80'>Interior Room Color Visualizer</text>
-                    </g>
-                    <g fill='%23e6eef8' opacity='0.9'>
-                      <rect x='40' y='120' width='220' height='140' rx='10' fill='%23121b24' opacity='0.35'/>
-                      <rect x='300' y='120' width='220' height='140' rx='10' fill='%23121b24' opacity='0.35'/>
-                    </g>
-                    <g fill='%239fb1c9' opacity='0.9'>
-                      <text x='50' y='170' font-size='14'>Upload an interior photo</text>
-                      <text x='50' y='200' font-size='12'>Click to auto-select wall or use brush</text>
                     </g>
                   </svg>" alt="placeholder" />
               </div>
